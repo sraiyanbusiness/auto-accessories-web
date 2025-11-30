@@ -1,0 +1,377 @@
+/* style.css - Modern & Sleek Auto Accessories NZ */
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #1c1c1c; /* dark gray */
+    color: #fff;
+    border: 8px solid #333; /* subtle border around the page */
+    border-radius: 12px;
+}
+
+h1, h2, h3, p, li {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    background: #2a2a2a;
+    border-radius: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    border: 2px solid #ff0000; /* red outline */
+    background: rgba(255,0,0,0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    animation: slideIn 1s ease;
+}
+header img {
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1c1c1c 100%);
+    border-radius: 12px;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+.hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Sections */
+.section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #2a2a2a;
+    border-radius: 16px;
+    border-left: 5px solid #ff0000;
+    animation: slideIn 1s ease;
+}
+
+/* Grids */
+.services-grid, .gallery-grid, .pricing-grid, .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: #333;
+    padding: 20px;
+    border-radius: 16px;
+    /*border-left: 3px solid #ff0000;*/
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255,0,0,0.5);
+}
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #ff0000;
+    margin-top: 50px;
+    color: #ccc;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Contact Page Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ff0000;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #ff5555;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ff0000;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e60000;
+}
+
+.socials a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    margin: 0 8px;
+}
+
+.socials a:hover {
+    color: #ff0000;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.page-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 6px 20px rgba(255,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+.page-hero h1 {
+    font-size: 3rem;
+    color: #ff0000;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+.page-hero p {
+    color: #fff;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+.card {
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255,0,0,0.6);
+    background: #1e1e1e;
+}
+.card h3 {
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+.card p {
+    color: #fff;
+    font-weight: 500;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+.gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(255,0,0,0.5);
+}
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+.reviews-grid .card {
+    background: #2a2a2a;
+    border-left: 5px solid #ff0000;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.reviews-grid .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255,0,0,0.5);
+    background: #1e1e1e;
+}
+.reviews-grid .card p {
+    color: #fff;
+    margin: 5px 0;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #1c1c1c; /* dark bar background */
+    border-bottom: 2px solid #ff0000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.navbar .logo img {
+    height: 50px;  /* adjust size */
+    width: auto;
+    object-fit: contain;
+    background: #1c1c1c; /* same as navbar to blend */
+    border-radius: 6px;   /* optional rounded corners */
+    padding: 3px;          /* optional spacing around logo */
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #ff5555;
+}
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+.pricing-card {
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255,0,0,0.6);
+    background: #1e1e1e;
+}
+
+.pricing-card h3 {
+    margin-bottom: 15px;
+    color: #ff0000;
+    font-size: 1.5rem;
+}
+
+.pricing-card p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+/* Minimal subtle white glow for pricing */
+.card span.price {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #ff4c4c;
+    border-top: 1px solid #ff4c4c;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+    text-shadow: 0.5px 0.5px 1px rgba(255,255,255,0.15); /* very subtle */
+}
+
+/* Hover effect: tiny lift and glow */
+.card:hover span.price {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0.5px 0.5px 1.2px rgba(255,255,255,0.2); /* minimal increase */
+}
